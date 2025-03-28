@@ -1,0 +1,33 @@
+#stacks_in_2158_page106 {
+	border: solid #000000;
+	border-width:  2px;
+	margin: 0px 180px 0px 180px;
+	padding:  5px;
+}
+
+#stacks_in_2159_page106 {
+	font-size: 80%;
+}
+
+#stacks_in_4031_page106 .stacks_left {
+	float:left;
+	width:32%;
+}
+
+#stacks_in_4031_page106 .stacks_right {
+	float:right;
+	width:32%;
+}
+
+#stacks_in_4031_page106 .stacks_middle {
+	position:relative;
+	margin:0 auto;
+	width:32%;
+}
+#stacks_in_4035_page106 {
+	margin: 0px 150px 0px 0px;
+}
+
+#stacks_in_4037_page106 {
+	margin: 0px 0px 0px 160px;
+}

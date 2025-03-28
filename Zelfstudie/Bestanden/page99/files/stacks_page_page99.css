@@ -1,0 +1,55 @@
+#stacks_in_1973_page99{text-align:justify}
+
+#stacks_in_1979_page99 .stacks_left {
+	float:left;
+	width:49%;
+}
+
+#stacks_in_1979_page99 .stacks_right {
+	float:right;
+	width:49%;
+}
+#stacks_in_1982_page99 {
+	border: solid #000000;
+	border-width:  2px;
+	margin: 0px 0px 0px 158px;
+	padding:  5px;
+}
+
+#stacks_in_1983_page99 {
+	font-size: 80%;
+}
+
+#stacks_in_1984_page99 {
+	border: solid #000000;
+	border-width:  2px;
+	margin: 0px 158px 0px 0px;
+	padding:  5px;
+}
+
+#stacks_in_1985_page99 {
+	font-size: 80%;
+}
+
+#stacks_in_3878_page99 .stacks_left {
+	float:left;
+	width:32%;
+}
+
+#stacks_in_3878_page99 .stacks_right {
+	float:right;
+	width:32%;
+}
+
+#stacks_in_3878_page99 .stacks_middle {
+	position:relative;
+	margin:0 auto;
+	width:32%;
+}
+#stacks_in_3882_page99 {
+	margin: 0px 150px 0px 0px;
+}
+
+#stacks_in_3884_page99 {
+	margin: 0px 0px 0px 160px;
+}

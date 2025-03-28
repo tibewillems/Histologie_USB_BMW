@@ -1,0 +1,35 @@
+#stacks_in_1989_page100{text-align:justify}
+
+#stacks_in_1995_page100 {
+	border: solid #000000;
+	border-width:  2px;
+	margin: 0px 180px 0px 180px;
+	padding:  5px;
+}
+
+#stacks_in_1996_page100 {
+	font-size: 80%;
+}
+
+#stacks_in_3888_page100 .stacks_left {
+	float:left;
+	width:32%;
+}
+
+#stacks_in_3888_page100 .stacks_right {
+	float:right;
+	width:32%;
+}
+
+#stacks_in_3888_page100 .stacks_middle {
+	position:relative;
+	margin:0 auto;
+	width:32%;
+}
+#stacks_in_3892_page100 {
+	margin: 0px 150px 0px 0px;
+}
+
+#stacks_in_3894_page100 {
+	margin: 0px 0px 0px 160px;
+}

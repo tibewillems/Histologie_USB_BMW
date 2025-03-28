@@ -1,0 +1,24 @@
+#stacks_in_570_page32{text-align:justify}
+
+#stacks_in_2946_page32 .stacks_left {
+	float:left;
+	width:32%;
+}
+
+#stacks_in_2946_page32 .stacks_right {
+	float:right;
+	width:32%;
+}
+
+#stacks_in_2946_page32 .stacks_middle {
+	position:relative;
+	margin:0 auto;
+	width:32%;
+}
+#stacks_in_2950_page32 {
+	margin: 0px 150px 0px 0px;
+}
+
+#stacks_in_2952_page32 {
+	margin: 0px 0px 0px 160px;
+}

@@ -1,0 +1,36 @@
+#stacks_in_1118_page55{text-align:justify}
+#stacks_in_1124_page55{text-align:justify}
+
+#stacks_in_1124_page55 {
+	border: solid #000000;
+	border-width:  2px;
+	margin: 0px 130px 0px 130px;
+	padding:  5px;
+}
+
+#stacks_in_1125_page55 {
+	font-size: 80%;
+}
+
+#stacks_in_2465_page55 .stacks_left {
+	float:left;
+	width:32%;
+}
+
+#stacks_in_2465_page55 .stacks_right {
+	float:right;
+	width:32%;
+}
+
+#stacks_in_2465_page55 .stacks_middle {
+	position:relative;
+	margin:0 auto;
+	width:32%;
+}
+#stacks_in_2469_page55 {
+	margin: 0px 150px 0px 0px;
+}
+
+#stacks_in_2473_page55 {
+	margin: 0px 0px 0px 160px;
+}

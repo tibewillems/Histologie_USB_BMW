@@ -1,0 +1,31 @@
+#stacks_in_579_page33{text-align:justify}
+
+#stacks_in_583_page33 {
+	border: solid #000000;
+	border-width:  2px;
+	padding:  5px;
+}
+#stacks_in_587_page33{text-align:justify}
+
+#stacks_in_2956_page33 .stacks_left {
+	float:left;
+	width:32%;
+}
+
+#stacks_in_2956_page33 .stacks_right {
+	float:right;
+	width:32%;
+}
+
+#stacks_in_2956_page33 .stacks_middle {
+	position:relative;
+	margin:0 auto;
+	width:32%;
+}
+#stacks_in_2960_page33 {
+	margin: 0px 150px 0px 0px;
+}
+
+#stacks_in_2962_page33 {
+	margin: 0px 0px 0px 160px;
+}

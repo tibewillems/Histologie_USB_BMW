@@ -1,0 +1,19 @@
+
+#stacks_in_2538_page50 .stacks_left {
+	float:left;
+	width:32%;
+}
+
+#stacks_in_2538_page50 .stacks_right {
+	float:right;
+	width:32%;
+}
+
+#stacks_in_2538_page50 .stacks_middle {
+	position:relative;
+	margin:0 auto;
+	width:32%;
+}
+#stacks_in_2542_page50 {
+	margin: 0px 150px 0px 0px;
+}

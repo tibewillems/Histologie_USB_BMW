@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Woordzoeker spierweefsel</title>
+<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/UA/consolidated-screen-48.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/UA/consolidated-all-48.css" />
+<script type="text/javascript" src="../rw_common/themes/UA/javascript.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<!--[if lt IE 9]><script type="text/javascript" src="bin/flashcanvas.js"></script><![endif]-->
+<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="css/buttons.css" type="text/css" charset="utf-8" />
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" charset="utf-8" /><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+<div id="container">
+  <div id="navcontainer">
+    <ul>
+      <li><a href="../index.html" rel="self">Start</a></li>
+      <li><a href="../styled/index.html" rel="self">Epithelen</a></li>
+      <li><a href="../styled-10/index.html" rel="self">Bindweefsel</a></li>
+      <li><a href="../styled-7/index.html" rel="self">Spierweefsel</a></li>
+      <li><a href="../page35/index.html" rel="self">Zenuwweefsel</a></li>
+      <li><a href="../styled-11/index.html" rel="self">Test je zelf!</a></li>
+    </ul>
+  </div>
+  <div class="clearer"></div>
+  <div id="siteHeader">
+    <div id="siteLogo"><img src="../rw_common/images/LCBH_ENG_RGB.png" width="176" height="34" alt="Site logo"/></div>
+    <h1>Zelfstudiepakket</h1>
+    <h2>Histologie</h2>
+  </div>
+  <div id="contentContainer">
+    <div id="content"> 
+      <!-- GAME OPTIONS -->
+      <ul id="game-options">
+        <li><b id="clock" class="button">00:00:00</b></li>
+        <li><b id="punten" class="button">10000 punten</b></li>
+        <li><a href="#" id="show-help" class="button help" title="Help">Help</a></li>
+        <li><a href="#" id="restart" class="button" title="Restart">Restart</a></li>
+        <li><a href="#" id="font-size-up" class="button left" title="Solo piezas del borde">+A</a></li>
+        <li><a href="#" id="font-size-down" class="button right" title="Solo piezas del centro"><small>-A</small></a></li>
+        <li>
+          <div class="styled-select words">
+            <select id="set-words">
+              <option value="1">Simpel</option>
+              <option value="1.5">Moeilijk</option>
+              <option value="2">Extreem</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <div class="styled-select size">
+            <select id="set-size">
+              <option value="10">10x10 grid</option>
+              <option value="15">15x15 grid</option>
+              <option value="20">20x20 grid</option>
+            </select>
+          </div>
+        </li>
+        <!-- Insert custom buttons here -->
+        <li> </li>
+      </ul>
+      
+      <!-- JIGSAW CANVAS --> 
+      
+      <br />
+      <h3>Woordzoeker spierweefsel</h3>
+      <div id="canvas-wrap">
+        <div id="word-search">
+          <canvas id="grid"></canvas>
+          <canvas id="lines"></canvas>
+          <canvas id="layer"></canvas>
+          <div id="word-description"></div>
+          <ol id="word-list">
+          </ol>
+        </div>
+      </div>
+      <div class="hide" id="help"> <a href="#" class="close" title="cerrar" onclick="closeModal(this);">X</a>
+        <h1>Hoe spelen!</h1>
+        <ul>
+          <li>Naast het rooster staan de te vinden woorden.</li>
+          <li>Woorden kunnen zowel van achter naar voor, als diagonaal en van onder naar boven gespeld worden.</li>
+          <li>Klik op de eerste letter en sleep tot het einde van het woord.</li>
+          <li>Als u het woord niet kunt vinden, klik dan op '<span style="color: #DA3974">toon</span>' in de lijst en het wordt getoond in het raster!</li>
+          <li>Het woordraster zelf is <span style="font-style: italic">aanpasbaar</span> lettergrootte en rastergrootte zijn instelbaar.</li>
+          <li>Tevens is er een optie om de moeilijkheidsgraad te kiezen.</li>
+        </ul>
+      </div>
+      
+      <!-- OVERLAY -->
+      <div class="hide" id="overlay"></div>
+      <iframe class="hide" src="about:blank" id="save-score" name="save-score"></iframe>
+      <!-- CONGRATULATION -->
+      <div id="congrat" class="hide"></div>
+      
+      <!-- TEMPLATES --> 
+      <script id="congrat-tmpl" type="text/template">
+<a href="#" class="close" title="cerrar" onclick="closeModal(this);">X</a>
+    <h1>Gefeliciteerd!</h1>
+    <h2>Uw score is</h2>
+    <h3>{score}</h3>
+</script> 
+      <!-- SCRIPTS ROMPECABEZAS --> 
+      <script>
+words={"A-BAND":"uitleg","ACTINE":"uitleg", "ALLIGNATIE":"uitleg","CILINDERVORMIG":"uitleg","CONTRAHEREN":"info","DENSE BODIES":"info","DESMOSOMEN":"info","DWARSSTREPING":"info","ENDOMYSIUM":"info", "EPIMYSIUM":"info","FUSIFORM":"info","GLADDE SPIERCEL":"info", "HARTSPIERCEL":"info","I-BAND":"info","INTERCALAIRE SCHIJF":"info","M-LIJN":"info","MYOCYT":"info","MYOFIBRILLEN":"info","MYOSINE":"info","MYOSINEKOP":"info","PERIMYSIUM":"info","SARCOLEMMA":"info","SARCOMEER":"info","SARCOPLASMA":"info","SKELETSPIERCEL":"info","SPOELVORMIG":"info","VERTAKT":"info","Z-SCHIJF":"info"}</script> 
+      <script src="js/soup.min.js" type="text/javascript"></script> 
+      <script src="js/main-app.js" type="text/javascript"></script> 
+      <br />
+      'Nu je alles weet over spierweefsel kan je je kennis toetsen met deze <a href="../code-7/index.html">meerkeuzevragen</a>.' </div>
+    <div class="clearer"></div>
+  </div>
+  <div id="breadcrumb"> </div>
+  <div id="footer">
+    <div id="archives"> </div>
+    <div id="sidebar"> </div>
+    <div class="clearer"></div>
+  </div>
+  <div id="copyright">
+    <h4><font color="#511A2C"> <span class="inset">ontwerp: Dominique De Rijck <a href="#" id="rw_email_contact"> Contact Me</a><script type="text/javascript">var _rwObsfuscatedHref0 = "mai";var _rwObsfuscatedHref1 = "lto";var _rwObsfuscatedHref2 = ":do";var _rwObsfuscatedHref3 = "min";var _rwObsfuscatedHref4 = "iqu";var _rwObsfuscatedHref5 = "e.d";var _rwObsfuscatedHref6 = "eri";var _rwObsfuscatedHref7 = "jck";var _rwObsfuscatedHref8 = "@ua";var _rwObsfuscatedHref9 = "ntw";var _rwObsfuscatedHref10 = "erp";var _rwObsfuscatedHref11 = ".be";var _rwObsfuscatedHref = _rwObsfuscatedHref0+_rwObsfuscatedHref1+_rwObsfuscatedHref2+_rwObsfuscatedHref3+_rwObsfuscatedHref4+_rwObsfuscatedHref5+_rwObsfuscatedHref6+_rwObsfuscatedHref7+_rwObsfuscatedHref8+_rwObsfuscatedHref9+_rwObsfuscatedHref10+_rwObsfuscatedHref11; document.getElementById('rw_email_contact').href = _rwObsfuscatedHref;</script>&nbsp;&nbsp;inhoud: <a href="mailto:inge.brouns@uantwerpen.be">dr. I. Brouns</a> & Martine Van den Broeck</span></font></h4>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+#stacks_in_1470_page75 {
+	border: solid #000000;
+	border-width:  2px;
+	padding:  5px;
+}
+
+#stacks_in_3206_page75 .stacks_left {
+	float:left;
+	width:32%;
+}
+
+#stacks_in_3206_page75 .stacks_right {
+	float:right;
+	width:32%;
+}
+
+#stacks_in_3206_page75 .stacks_middle {
+	position:relative;
+	margin:0 auto;
+	width:32%;
+}
+#stacks_in_3210_page75 {
+	margin: 0px 150px 0px 0px;
+}
+
+#stacks_in_3212_page75 {
+	margin: 0px 0px 0px 160px;
+}
